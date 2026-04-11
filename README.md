@@ -61,35 +61,60 @@ This printer is inspired by the Ultimaker 2 linear guide structure, but with a k
 Crossed_linearguide_3Dprinter/
 ├── README.md              # 项目说明 This file
 ├── LICENSE                # 开源许可证 License
-├── Picture/               # 项目图片 Project Photos
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   └── ...
-├── Solidworks/            # SolidWorks CAD 源文件
-│   ├── X 轴组件.SLDPRT
-│   ├── Y 轴组件.SLDPRT
-│   ├── Z 轴组件.SLDPRT
-│   └── ...
-└── STL/                   # 3D 打印用 STL 文件
-    ├── X 轴组件.STL
-    ├── Y 轴组件.STL
-    ├── Z 轴组件.STL
-    └── ...
+├── Picture/               # 项目图片 Project photos, 5 JPG files
+├── Solidworks/            # SolidWorks CAD 源文件, 16 SLDPRT files
+├── STL/                   # 3D 打印用 STL 文件, 17 STL files
+└── Test model/            # 测试模型 Test model
 ```
 
 ### 📄 文件说明 | File Description
 
 #### SolidWorks 源文件 | CAD Source Files
-- `X 轴组件.SLDPRT` - X 轴零件
-- `Y 轴组件.SLDPRT` - Y 轴零件（包含上下部分）
-- `Z 轴组件.SLDPRT` - Z 轴零件
-- `USB 固定座.SLDPRT` - USB 接口固定座
-- `屏幕支架.SLDPRT` - 屏幕安装支架
-- `高脚 um2 喷头 V2.0.SLDPRT` - 喷头组件
+- `USB固定座.SLDPRT` - USB 接口固定座
+- `x滑块.SLDPRT` - X 轴滑块
+- `x滑块盖板.SLDPRT` - X 轴滑块盖板
+- `X限位V2.0.SLDPRT` - X 轴限位安装件
+- `y滑块.SLDPRT` - Y 轴滑块
+- `y滑块盖板 上部.SLDPRT` - Y 轴滑块上盖板
+- `y滑块盖板 下部.SLDPRT` - Y 轴滑块下盖板
+- `Y限位V2.0.SLDPRT` - Y 轴限位安装件
+- `z限位 V2.0.SLDPRT` - Z 轴限位安装件
+- `吹料风扇.SLDPRT` - 部件冷却风扇安装件
+- `吹料风扇垫片.SLDPRT` - 部件冷却风扇垫片
+- `喷头垫片.SLDPRT` - 喷头垫片
+- `屏幕盒.SLDPRT` - 屏幕盒
+- `屏幕盒盖.SLDPRT` - 屏幕盒盖
+- `电机隔热片.SLDPRT` - 电机隔热片
+- `线轨um2喷头V2.0.SLDPRT` - 线轨 UM2 喷头组件
 
 #### STL 文件 | STL Files for 3D Printing
-所有零件已导出为 STL 格式，可直接用于 3D 打印。
-All parts are exported as STL files, ready for 3D printing.
+所有零件已导出为 STL 格式，可直接用于切片软件。
+All parts are exported as STL files and ready for slicer preparation.
+
+- `USB固定座 上部.STL`
+- `USB固定座 下部.STL`
+- `USB固定座.STL`
+- `xyz测试.STL`
+- `x滑块.STL`
+- `x滑块盖板.STL`
+- `X限位V2.0.STL`
+- `y滑块.STL`
+- `y滑块盖板 上部.STL`
+- `y滑块盖板 下部.STL`
+- `Y限位V2.0.STL`
+- `z限位 V2.0.STL`
+- `喷头垫片.STL`
+- `屏幕盒.STL`
+- `屏幕盒盖.STL`
+- `电机隔热片.STL`
+- `线轨um2喷头V2.0.STL`
+
+### ✅ 维护状态 | Maintenance Status
+
+- 仓库包含 5 张项目图片、16 个 SolidWorks 零件源文件、17 个 STL 文件和 1 个测试模型。
+- 17 个 STL 文件均通过二进制 STL 长度与三角面片计数校验。
+- `.gitignore` 已排除 SolidWorks 临时/备份文件、系统噪音文件和常见切片输出文件。
+- `.gitattributes` 已将 CAD、STL、图片资源标记为二进制文件，降低跨平台换行或 diff 干扰。
 
 ---
 

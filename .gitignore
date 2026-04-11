@@ -1,0 +1,23 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.log
+
+# SolidWorks temporary and backup files
+~$*
+*.SLDPRT.bak
+*.SLDASM.bak
+*.SLDDRW.bak
+Backup of *.SLDPRT
+Backup of *.SLDASM
+Backup of *.SLDDRW
+
+# Slicer and printer output generated from the source models
+*.gcode
+*.gx
+*.ufp
+*.x3g
+*.makerbot
